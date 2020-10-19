@@ -1,0 +1,45 @@
+.Cart {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background-color: lightgray;
+  margin-top: 20px;
+  width: 100%;
+  button {
+    position: relative;
+    margin: 5px 20px 5px 5px;
+    color: transparent;
+    transition: 0.3s ease;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    outline: none;
+    .fa-minus-circle {
+      pointer-events: none;
+    }
+    &:hover {
+      background-color: gray;
+      color: lightblue;
+    }
+    &:hover ~ li {
+      transform: scale(1.05);
+    }
+    &:active {
+      transform: scale(0.9);
+    }
+  }
+  ul {
+    list-style: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.17rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s ease;
+    &:hover {
+      transform: scale(1.05);
+    }
+    &:hover ~ button {
+      background-color: gray;
+      color: lightblue;
+    }
+  }
+}

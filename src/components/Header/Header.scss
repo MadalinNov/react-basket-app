@@ -1,0 +1,20 @@
+.Header {
+  width: 100%;
+  height: 150px;
+  background-color: #4c4c4c;
+  color: lightgray;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .fa-shopping-basket {
+    font-size: 5rem;
+    padding: 10px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    &:hover {
+      transform: translateY(-5px);
+    }
+  }
+}

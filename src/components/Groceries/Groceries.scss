@@ -1,0 +1,42 @@
+.Groceries {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  width: 100%;
+  button {
+    position: relative;
+    margin: 5px 20px 5px 5px;
+    color: transparent;
+    transition: 0.3s ease;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    outline: none;
+    &:hover {
+      background-color: gray;
+      color: lightblue;
+    }
+    &:hover ~ h3 {
+      transform: scale(1.05);
+    }
+    &:active {
+      transform: scale(0.9);
+    }
+    .fa-plus {
+      pointer-events: none;
+    }
+  }
+}
+h3 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s ease;
+  &:hover {
+    transform: scale(1.05);
+  }
+  &:hover ~ button {
+    background-color: gray;
+    color: lightblue;
+  }
+}

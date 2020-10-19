@@ -1,0 +1,72 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.App {
+  text-align: center;
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.App .MainContainer {
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  position: absolute;
+  width: 80%;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.App .MainContainer .Grocery {
+  background-color: #afafaf;
+}
+
+.App .MainContainer .Grocery:nth-child(odd) {
+  background-color: lightgray;
+}
+
+.App .MainContainer .CartHeading {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.App .MainContainer .CartHeading button {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  margin: 5px 20px 5px 5px;
+  color: #3e7181;
+  background-color: inherit;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  border: 1px solid #ccc;
+  outline: none;
+  border-radius: 5px;
+}
+
+.App .MainContainer .CartHeading button .fa-trash {
+  pointer-events: none;
+}
+/*# sourceMappingURL=App.css.map */

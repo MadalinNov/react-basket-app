@@ -1,0 +1,63 @@
+.Cart {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: lightgray;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.Cart button {
+  position: relative;
+  margin: 5px 20px 5px 5px;
+  color: transparent;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.Cart button .fa-minus-circle {
+  pointer-events: none;
+}
+
+.Cart button:hover {
+  background-color: gray;
+  color: lightblue;
+}
+
+.Cart button:hover ~ li {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.Cart button:active {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+.Cart ul {
+  list-style: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.17rem;
+  font-weight: 500;
+  cursor: pointer;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.Cart ul:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.Cart ul:hover ~ button {
+  background-color: gray;
+  color: lightblue;
+}
+/*# sourceMappingURL=Cart.css.map */
